@@ -1,7 +1,7 @@
   Coder
 
-Priyanshu Pawar
-Akshay Puranik
-Sanjay Kumar
-Choudhary Jitendra
-Rakesh Gudur
+Student 1-Priyanshu Pawar
+Student 2-Akshay Puranik
+Student 3-Sanjay Kumar
+Student 4-Choudhary Jitendra
+Student 5-Rakesh Gudur
