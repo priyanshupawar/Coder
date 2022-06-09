@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Page</title>
+    <style>
+        #container{
+            display: grid;
+            margin-left: 300px;
+            grid-template-columns: repeat(2,400px);
+            grid-template-rows: repeat(1,700px);
+            gap: 20px;
+        }
+        div{
+            /* border: 1px solid red; */
+            
+        }
+        h3{
+            font-size: 45px;
+            padding-left: 35px;
+        }
+        img{
+            height: 400px;
+
+        }
+        h3+p{
+            font-size: 20px;
+            padding-left: 35px;
+            margin-top: -27px;
+            
+        }
+        p+h3{
+            margin-top: -15px;
+        }
+        p+h3+p{
+            margin-top: -85px;
+            margin-left: 120px;
+            text-decoration: line-through;
+           font-size: 25px;
+           font-weight: lighter;
+        }
+        p+h3+p+p{
+            margin-top: -54px;
+            margin-left: 240px;
+            color: green;
+
+
+           font-size: 25px;
+           font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+   let profile=[
+       {
+           img:"https://rukminim1.flixcart.com/image/880/1056/kt0enww0/sweatshirt/e/y/f/m-tblhdfulmasksweat-plainst4-tripr-original-imag6gf9pbmygrs4.jpeg?q=50",
+           name:"Pause",
+           p:"Mens Cotton Long Sleeve Shrug",
+           q:"₹ 359",
+           r:"₹  1,499",
+           s:"-76%"
+       },
+       {
+           img:"https://m.media-amazon.com/images/I/91cxUTyyp+L._UX679_.jpg",
+           name:"Jubination",
+           p:"Men Wool sleeveless Sweater Pack of 1",
+           q:"₹ 709",
+           r:"₹  1,499",
+           s:"-47%"
+       }
+   ]
+   profile.forEach(function (elem) {
+        let box = document.createElement("div")
+        let photo = document.createElement("img")
+        photo.setAttribute("src", elem.img);
+
+        let Name = document.createElement("h3");
+        Name.innerText = elem.name;
+
+      let a=document.createElement("p")
+      a.innerText=elem.p;
+      let b=document.createElement("h3")
+      b.innerText=elem.q;
+      let c=document.createElement("p")
+      c.innerText=elem.r
+      let d=document.createElement("p")
+      d.innerText=elem.s
+
+
+        box.append(photo,Name,a,b,c,d);
+        document.querySelector("#container").append(box)
+    })
+</script>
