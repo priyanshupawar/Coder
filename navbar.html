@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
     <style>
-        body{
-            color: white;
-        }
-        #main{
-            height: 100px;
-            border-radius: 20px;
-            width: 100%;
-            background-color: hsl(212deg 33% 16%);
-            display: flex;
-            justify-content: space-between;
-        }
+      body {
+        color: white;
+      }
+      #main {
+        height: 75px;
+        border-radius: 20px;
+        width: 100%;
+        background-color: hsl(212deg 33% 16%);
+        display: flex;
+        justify-content: space-between;
+      }
 
-        .but{
-            padding: 10px 40px;
-        }
+      .but {
+        padding: 10px 40px;
+      }
 
-        .but:hover{
-            cursor: pointer;
-            color: red;
-        }
+      .but:hover {
+        cursor: pointer;
+        color: red;
+      }
 
-        #rbk{
-            padding: 0;
-            width: 10%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      #rbk {
+        padding: 0;
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-
-
-        #right{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-
+      #right {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 900px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="main">
-        <div id="rbk" class="but">Reebok</div>
-        <div id="right">
-            <div class="but">Men</div>
-            <div class="but">Women</div>
-            <div class="but">Login</div>
-            <div class="but">Signup</div>
-        </div>
-        <p></p>
+      <div id="rbk" class="but" href="#">Reebok</div>
+      <div id="right">
+        <div class="but"><a href="mens.html">Men</a></div>
+        <div class="but"><a href="#">Women</a></div>
+        <div class="but"><a href="login.html">Login</a></div>
+        <div class="but"><a href="signup.html">Signup</a></div>
+      </div>
+      <p></p>
     </div>
-</body>
+  </body>
 </html>
